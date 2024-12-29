@@ -1,6 +1,6 @@
 {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/index.html" }
-    ]
-  }
-  
+  "routes": [
+    { "src": "/products", "dest": "/products.html" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
