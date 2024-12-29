@@ -288,7 +288,7 @@
     </div>
 
     <!-- Second set of products (initially hidden) -->
-    <div id="products-section-2" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+    <div id="products-section-2" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8" style="display: none;">
       <!-- Additional product cards with same fixed height structure -->
     </div>
 
@@ -397,7 +397,7 @@
     // Show more products functionality
     function showMoreProducts(section) {
       if(section === 1) {
-        document.getElementById('products-section-2').classList.remove('hidden');
+        document.getElementById('products-section-2').style.display = 'grid';
         document.getElementById('show-more-1').classList.add('hidden');
         document.getElementById('show-more-2').classList.remove('hidden');
       }
