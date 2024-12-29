@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>The Hampers Studio</title>
+</head>
+<body class="font-['Montserrat']">
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex-shrink-0 items-center flex">
+          <img src="assets/logo.png" alt="The Hampers Studio Logo" class="w-16 mr-2">
+          <a href="./index.html" class="text-xl text-[#988e87] font-bold">The Hampers Studio</a>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#" class="text-black text-xl font-semibold hover:text-gray-600">Home</a>
+          <a href="./products.html" class="text-black text-xl font-semibold hover:text-gray-600">Product</a>
+          <a href="#about-us" class="text-black text-xl font-semibold hover:text-gray-600">About Us</a>
+          <a href="#contact" class="text-black text-xl font-semibold hover:text-gray-600">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-gray-800 hover:text-gray-600">
+            <i class="ri-menu-line text-2xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <div class="flex flex-col space-y-4">
+          <a href="./index.html" class="text-gray-800 hover:text-gray-600">Home</a>
+          <a href="./products.html" class="text-gray-800 hover:text-gray-600">Product</a>
+          <a href="#about-us" class="text-gray-800 hover:text-gray-600">About Us</a>
+          <a href="#contact" class="text-gray-800 hover:text-gray-600">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="w-full h-screen pt-20 relative">
+    <img src="assets/landing_page_bg.png" alt="The Hampers Studio Landing" class="w-full h-full object-cover">
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+      <img src="assets/logo_wo_title.png" alt="The Hampers Studio Logo" class="w-28 md:w-auto">
+      <h1 class="text-5xl md:text-6xl lg:text-9xl font-thin mb-4 text-[#ffe8d8] font-['Poppins']">
+        The Hampers <br> <span class="font-bold">Studio</span>
+      </h1>
+      <p class="text-lg md:text-2xl lg:text-3xl mb-4 md:mb-6 lg:mb-8">"Elevate your gifts with our Hampers"</p>
+      <button  onclick="window.location.href='#goals'" class="bg-white text-black px-6 py-2 md:px-8 md:py-3 rounded-full text-base md:text-lg font-semibold hover:bg-gray-200 transition-colors font-['Poppins']" >
+        Read More
+      </button>
+    </div>
+  </div>
+
+  <section class="bg-white py-16 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-4xl md:text-5xl font-semibold text-center mb-12 font-['Poppins']">New Arrivals</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Category 1 -->
+        <div class="bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+          <img src="assets/arrival 1.jpg" alt="Iris Purple rectangular box" class="w-full h-64 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-semibold mb-2 font-['Poppins']">Iris Purple rectangular box</h3>
+          <p class="text-gray-600">Iris Purple marble paint rectangular box<br>
+            Size:- 20 x 25 x 7 cm<br>
+            Closure:- open lid<br>
+            Purpose:- bday, wedding, anniversary & much more</p>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+          <img src="assets/arrival 2.jpg" alt="Pastel cream floral carry bags" class="w-full h-64 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-semibold mb-2 font-['Poppins']">Pastel cream floral carry bags</h3>
+          <p class="text-gray-600">Pastel cream floral carry bags <br>
+            All Sizes are available <br>
+            Customizations are available on order</p>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+          <img src="assets/arrival 3.jpg" alt="Diwali basket hamper" class="w-full h-64 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-semibold mb-2 font-['Poppins']">Diwali basket hamper</h3>
+          <p class="text-gray-600">Dryfruits, chocolates, candles, cookies, lights & much more <br>
+            Tan brown jute basket( 15 x 15 cm) <br>
+            Customizations are available on orders</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white py-16 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-4xl md:text-5xl font-semibold text-center mb-12 font-['Poppins']">Shop By Category</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Category 1 -->
+        <div class="bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+          <img src="assets/arrival 1.jpg" alt="Iris Purple rectangular box" class="w-full h-64 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-semibold mb-2 font-['Poppins']">Iris Purple rectangular box</h3>
+          <p class="text-gray-600">Iris Purple marble paint rectangular box<br>
+            Size:- 20 x 25 x 7 cm<br>
+            Closure:- open lid<br>
+            Purpose:- bday, wedding, anniversary & much more</p>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+          <img src="assets/arrival 2.jpg" alt="Pastel cream floral carry bags" class="w-full h-64 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-semibold mb-2 font-['Poppins']">Pastel cream floral carry bags</h3>
+          <p class="text-gray-600">Pastel cream floral carry bags <br>
+            All Sizes are available <br>
+            Customizations are available on order</p>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+          <img src="assets/arrival 3.jpg" alt="Diwali basket hamper" class="w-full h-64 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-semibold mb-2 font-['Poppins']">Diwali basket hamper</h3>
+          <p class="text-gray-600">Dryfruits, chocolates, candles, cookies, lights & much more <br>
+            Tan brown jute basket( 15 x 15 cm) <br>
+            Customizations are available on orders</p>
+        </div>
+      </div>
+
+      <div class="flex justify-center mt-12">
+        <button onclick="window.location.href='./products.html'" class="bg-black text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-800 transition-colors font-['Poppins']">
+          Shop All
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-24 px-4" id="goals">
+    <div class="container mx-auto">
+      <div class="flex flex-col-reverse lg:flex-row-reverse items-center gap-32 lg:gap-96">
+        <!-- Goals Content -->
+        <div class="lg:w-1/2 space-y-8">
+          <h2 class="text-5xl md:text-6xl font-semibold font-['Poppins']">Our Goals</h2>
+          <p class="text-gray-600 leading-relaxed text-xl">
+            We are opening to you the Gateway of Presenting your presents with more beauty & Packed with all your love and Pastels.
+          </p>
+          <p class="text-gray-600 leading-relaxed text-xl">
+            - From matching shades to shades 
+          </p>
+          <p class="text-gray-600 leading-relaxed text-xl">
+            - To designing your thoughts
+          </p>
+          <p class="text-gray-600 leading-relaxed text-xl">
+            - And Packaging you love
+          </p>
+          <p class="text-gray-600 leading-relaxed text-xl">
+          We will provide you the Finest & Luxurious customized boxes, Designed paper bags, Baskets, hampers and much more....!!
+          </p>
+        </div>
+        
+        <!--Goals Image -->
+        <div class="w-2/3 lg:w-1/2">
+          <img src="assets/goals.jpg" alt="Our Goals" class="w-full h-[300px] lg:h-[600px] object-cover rounded-lg shadow-xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-24 px-4" id="about-us">
+    <div class="container mx-auto">
+      <div class="flex flex-col-reverse lg:flex-row items-center gap-32 lg:gap-96">
+        <!-- About Content -->
+        <div class="lg:w-1/2 space-y-8">
+          <h2 class="text-5xl md:text-6xl font-semibold font-['Poppins']">About Us</h2>
+          <p class="text-gray-600 leading-relaxed text-xl">
+            We believe every product deserves the right packaging to capture the essence of your product or gift or give away! We work across industries, businesses, corporations, and startups – large and small.
+          </p>
+          <h2 class="text-4xl md:text-5xl font-semibold font-['Poppins']">Our Locations</h2>
+          <p class="text-gray-600 leading-relaxed text-xl">
+            Infront on Uma Club & Resort , Gate no. - 3, Vits College Road, Pateri, Satna, Madhya Pradesh - 485001
+          </p>
+          <p class="text-gray-600 leading-relaxed text-xl">
+            Near Rameshwaram Park, Bharahut Nagar, Satna, Madhya Pradesh -485001
+          </p>
+        </div>
+        
+        <!--About Image -->
+        <div class="w-2/3 lg:w-1/2">
+          <img src="assets/about-us.jpg" alt="About Hampers Studio" class="w-full h-[300px] lg:h-[600px] object-cover rounded-lg shadow-xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+ 
+  <footer class="relative bg-black text-white py-16 px-4" id="contact">
+    <div class="absolute inset-0 z-0">
+      <img src="assets/landing_page_bg.png" alt="Footer Background" class="w-full h-full object-cover opacity-40">
+    </div>
+    <div class="container mx-auto relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+        <!-- Company Info -->
+        <div class="space-y-4">
+          <h3 class="text-2xl font-semibold font-['Poppins']">The Hampers Studio</h3>
+          <p class="text-gray-300">Crafting extraordinary gift experiences that leave lasting impressions.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-300 hover:text-white">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-white">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-white">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="space-y-4">
+          <h4 class="text-lg font-semibold font-['Poppins']">Contact Us</h4>
+          <ul class="space-y-2">
+            <li class="text-gray-300">Infront on Uma Club & Resort , Gate no. - 3, Vits College Road, Pateri, Satna, Madhya Pradesh - 485001</li>
+            <li class="text-gray-300">Phone: +91 90095 83473</li>
+            <li class="text-gray-300">Email: prasoonjaiswal07@gmail.com</li>
+          </ul>
+        </div>
+
+        <!-- Social Links -->
+        <div class="space-y-4">
+          <h4 class="text-lg font-semibold font-['Poppins']">Follow Us</h4>
+          <div class="space-y-3">
+            <a href="#" class="text-gray-300 hover:text-white flex items-center space-x-2">
+              <i class="fab fa-facebook text-xl"></i>
+              <span>Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/the_hampers_studio.07?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-gray-300 hover:text-white flex items-center space-x-2">
+              <i class="fab fa-instagram text-xl"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-white flex items-center space-x-2">
+              <i class="fab fa-twitter text-xl"></i>
+              <span>Twitter</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+        <p class="text-gray-300">&copy; 2024 The Hampers Studio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
